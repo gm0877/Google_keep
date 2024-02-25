@@ -1,0 +1,27 @@
+<form [formGroup]="LoginForm" (ngSubmit)="LoginUser()" >    
+<div class="main">
+     <span class="l1">G</span><span class="l2">o</span><span class="l3">o</span><span class="l4">g</span><span class="l5">l</span><span class="l6">e</span>
+      <h3 class="create">Login</h3>
+      <h5 class="login" >Use Your Google Account</h5>
+      <div class="type">
+         <!-- <input type="text" placeholder="Email or Phone*" required> -->
+
+         <input  type="text" placeholder="Email or phone*" formControlName="email">
+            <div style="color:red;" *ngIf="submitted && f?.['email']?.errors?.['required']">email is required</div>
+            <div style="color:red;" *ngIf="submitted && f?.['email']?.errors?.['email']">Email should be valid</div> 
+         <br>
+         <!-- <input style="margin-top: 25px;" type="text" placeholder="Password*" required> -->
+         <input style="margin-top: 25px;"  type="password" placeholder="Password*" formControlName="password">
+         <div style="color:red;" *ngIf="submitted && f?.['password']?.errors?.['required']">Password is required</div>
+         <div style="color:red;" *ngIf="submitted && f?.['password']?.errors?.['minlength']">Password should have atleast 6 characters</div>
+
+         
+      </div>
+      <p class="fpass" style="color: blue;">forgot Password?</p>
+      <div class="signin">
+         <p><a href="#" style="text-decoration: none ;">Create Account</a></p>
+         <input id="in1" type="submit" value="Next">
+      </div>
+   
+</div>
+</form>

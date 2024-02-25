@@ -1,0 +1,254 @@
+
+    @media screen and (min-width: 900px){
+    
+    .l1{
+        color:blue ;
+        font-size: large;
+    }
+    .l2{
+        color:red ;
+        font-size: large;
+    }
+    .l3{
+        color:orange;
+        font-size: large;
+    }
+    .l4{
+        color: blue;
+        font-size: large;
+    }
+    .l5{
+        color: green;
+        font-size: large;
+    }
+    .l6{
+        color: red;
+        font-size: large;
+    }
+    #cf{
+      margin-left: 15px;
+    }
+    .main{
+        border: 1px solid rgb(43, 39, 39);
+        padding: 30px;
+        border-radius: 10px;
+        margin-top: 40px;
+        margin-left: 290px;
+        margin-right: 420px;
+        /* box-shadow: 5px; */
+    }
+    .firsthead{
+        height: 60px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+    .username{
+    display: block;
+        font-size: small;
+        margin-top: 10px;
+    }
+    .signin{
+        position:relative ;
+    }
+    .firsthead input{
+        padding: 7px; 
+        width: 160px;
+        height: 25px;
+        border-radius: 4px;
+    }
+    .username input{
+        padding: 5px;
+        width: 350px;
+        height: 25px;
+        border-radius: 3px;
+    }
+    .username p{
+        font-size: medium;
+        color: blue;
+        text-decoration: none;
+       
+    }
+    .username{
+        font-size: small;
+    }
+    .password{
+        margin-top: 42px;
+    }
+    .password input{
+        padding: 7px;
+        width: 160px;
+        height: 25px;
+    
+    }
+    .signin{
+        display: flex;
+        gap: 160px;
+    
+    }
+    .signin p{
+        font-size: medium;
+        color: blue;
+        text-decoration: none;
+    }
+    #in1{
+        background-color: blue;
+        color: white;
+        width: 90px;
+        height: 35px;
+        position: relative;
+        top: 11.5px;
+    
+    }
+    .password input{
+        border-radius: 3px;
+    
+    }
+    .headermain{
+    border-radius: 1px solid black;
+    
+    }
+    .im1{
+      
+        height: 220px;
+        width: 190px;
+        margin-right: 13px;
+        float:right ;
+    }
+    .im1 img{
+        height: 190px;
+    }
+    #lname{
+      margin-left: 16px;
+    }
+    
+    }
+    
+    @media screen and (max-width: 800px){
+        .l1{
+            color:blue ;
+            font-size: large;
+        }
+        .l2{
+            color:red ;
+            font-size: large;
+        }
+        .l3{
+            color:orange;
+            font-size: large;
+        }
+        .l4{
+            color: blue;
+            font-size: large;
+        }
+        .l5{
+            color: green;
+            font-size: large;
+        }
+        .l6{
+            color: red;
+            font-size: large;
+        }
+        .create{
+            font-size: 18px;
+        }
+        .main{
+            border: 1px solid rgb(43, 39, 39);
+            /* box-shadow:px; */
+            padding: 30px;
+            border-radius: 10px;
+            /* margin-top: 40px;
+            margin-left: 290px;
+            margin-right: 420px; */
+            height: auto;
+        }
+        .firsthead{
+            height: 60px;
+            margin-top: 3px;
+            margin-bottom: 3px;
+        }
+        #lname{
+            margin-top: 20px;
+    
+        }
+    
+        .username{
+        display: block;
+            font-size: small;
+            margin-top: 10px;
+        }
+        .signin{
+            position:relative ;
+        }
+        .firsthead input{
+            padding: 7px; 
+            width: 160px;
+            height: 25px;
+            border-radius: 4px;
+        }
+        .username input{
+            padding: 5px;
+            width: 350px;
+            height: 25px;
+            border-radius: 3px;
+        }
+        .username p{
+            font-size: medium;
+            color: blue;
+            text-decoration: none;
+           
+        }
+        .username{
+            font-size: small;
+        }
+        .username input{
+            width: 200px;
+        }
+        .password{
+            margin-top: 42px;
+        }
+        .password input{
+            padding: 7px;
+            width: 160px;
+            height: 25px;
+        
+        }
+        .signin{
+            display: flex;
+            gap: 160px;
+        
+        }
+        .signin p{
+            font-size: medium;
+            color: blue;
+            text-decoration: none;
+        }
+        #in1{
+            background-color: blue;
+            color: white;
+            width: 90px;
+            height: 35px;
+            position: relative;
+            top: 11.5px;
+        
+        }
+        #un{
+    margin-top: 60px;
+        }
+        .password input{
+            border-radius: 3px;
+        
+        }
+        .headermain{
+        border-radius: 1px solid black;
+        
+        }
+        .im1{
+            display: none;
+           
+        }
+    
+    #cf{
+        margin-top: 15px;
+    }
+    }
+    

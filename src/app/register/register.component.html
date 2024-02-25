@@ -1,0 +1,68 @@
+<form [formGroup]= "RegisterForm" (ngSubmit)="registerUser()">
+<div class="headermain">
+      <div class="main">
+       <span class="l1">G</span><span class="l2">o</span><span class="l3">o</span><span class="l4">g</span><span class="l5">l</span><span class="l6">e</span>
+       <h4 class="create">CREATE YOUR GOOGLE ACCOUNT</h4>
+       <br>
+       <div class="firsthead">
+        <!-- <div [formGroup]="RegisterForm">
+            <input formControlName="firstName">
+          </div> -->
+        <input id="fname"  type="text" placeholder="First Name*" formControlName="firstName"> 
+                        <div style="color:red;" *ngIf="submitted && f?.['firstName']?.errors?.['required']">First Name is required</div>
+                        <div style="color:red;" *ngIf="submitted && f?.['firstName']?.errors?.['minlength']">First Name should have at least 3 characters</div>  
+          <!-- <input type="text" placeholder="Firstname*"  id="fname" >
+          <input type="text" placeholder="Lastname*"  id="lname"  > -->
+
+          <input id="lname" type= text  placeholder="Last Name*"  formControlName="lastName">  
+          <div style="color:red;" *ngIf="submitted && f?.['lastName']?.errors?.['required']">Last Name is required</div>
+          <div style="color:red;" *ngIf="submitted && f?.['lastName']?.errors?.['minlength']">Last Name should have atleast 3 characters</div>  
+       </div>
+       <div class="im1">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWhCs4f2YW-VqYSm1zPkcdznlX95UOuiO8tw&usqp=CAU " alt="security image">
+       </div>
+      
+       <div class="username">
+          <!-- <input type="text" placeholder="Username* @gmail.com"  class="username" required id="un"> -->
+          <input class="username" id="un" type= text placeholder="Username* @gmail.com"  formControlName="userName">
+          
+          <div style="color:red;" *ngIf="submitted && f?.['userName']?.errors?.['required']">User Name is required</div>
+          <div style="color:red;" *ngIf="submitted && f?.['userName']?.errors?.['email']">Email should be valid</div> 
+          you can use letters,numbers & periods
+          <p >Use my current email instead</p>
+      </div>
+     
+
+       
+       <div  class="password">
+          <!-- <input  type="password" placeholder="Password*" required > -->
+          <input  type="password"  placeholder="Password*"  formControlName="password">
+          <div style="color:red;" *ngIf="submitted && f?.['password']?.errors?.['required']">Password is required</div>   
+          <div style="color:red;" *ngIf="submitted && f?.['password']?.errors?.['minlength']">Password should have atleast 3 characters</div>  
+
+
+          <!-- <input  type="password" placeholder="Confirm*" required id="cf"> -->
+          <input id="cf" type="password" placeholder="Confirm*" formControlName="cnf_pswd" >
+          <div style="color:red;" *ngIf="submitted && f?.['cnf_pswd']?.errors?.['passwordMismatch']">
+             Password and Confirm Password do not match
+           </div> 
+
+          
+          <p>Use 8 or more characters with a mix of letters,numbers & symbols</p>
+       </div>
+    
+       <input type="checkbox">
+       <label id>ShowPassword</label>
+    
+        
+        <br>
+       <div class="signin">
+          <p><a href="#" id="sinstead" style="text-decoration: none;">Sign in instead</a></p>
+          <input style="border-radius: 8px;" id="in1" type="submit" value="Next" >
+       </div>
+    
+    
+      
+      </div>
+    </div>
+</form>
