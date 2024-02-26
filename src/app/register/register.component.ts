@@ -1,6 +1,7 @@
 import { Component,OnInit } from '@angular/core';
 import {FormBuilder,FormControl, FormGroup, Validators, ValidatorFn, AbstractControl } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { UserService } from '../services/user_services/user.service';
 
 @Component({
   selector: 'app-register',
@@ -14,12 +15,13 @@ import { ReactiveFormsModule } from '@angular/forms';
 export class RegisterComponent implements OnInit{
   RegisterForm !: FormGroup
   submitted: boolean = false
+  UserService: any;
   
   ngOnInit():void{
 
   }
 
-  constructor(private formBuilder: FormBuilder){
+  constructor(private formBuilder: FormBuilder,public userService:UserService){
     this.RegisterForm =this.formBuilder.group({
       firstName:['',[Validators.required,Validators.minLength(3)]],
       lastName:['',[Validators.required,Validators.minLength(3)]],
@@ -35,8 +37,15 @@ export class RegisterComponent implements OnInit{
 
   registerUser(){
     this.submitted=true;
+    const{firstName,lastName,userName,password}=this.RegisterForm.value
+     this.userService.registerUser({
+      "firstName":firstName,
+      "lastName":lastName,
+      "email":userName,
+      "password":password,
+      "service":"advance"
+     }).subscribe((result)=>{console.log(result);},(error)=>{console.log(error);})
     console.log(this.RegisterForm.value);
-    
   }
 
 
