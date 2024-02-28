@@ -60,13 +60,13 @@
         padding: 7px; 
         width: 160px;
         height: 25px;
-        border-radius: 4px;
+        /* border-radius: 1px; */
     }
     .username input{
         padding: 5px;
         width: 350px;
         height: 25px;
-        border-radius: 3px;
+        /* border-radius: 3px; */
     }
     .username p{
         font-size: medium;
@@ -76,6 +76,8 @@
     }
     .username{
         font-size: small;
+        
+        
     }
     .password{
         margin-top: 42px;
@@ -159,12 +161,9 @@
         }
         .main{
             border: 1px solid rgb(43, 39, 39);
-            /* box-shadow:px; */
+
             padding: 30px;
             border-radius: 10px;
-            /* margin-top: 40px;
-            margin-left: 290px;
-            margin-right: 420px; */
             height: auto;
         }
         .firsthead{
@@ -189,7 +188,6 @@
             padding: 7px; 
             width: 160px;
             height: 25px;
-            border-radius: 4px;
         }
         .username input{
             padding: 5px;
@@ -240,10 +238,7 @@
         #un{
     margin-top: 60px;
         }
-        .password input{
-            border-radius: 3px;
-        
-        }
+       
         .headermain{
         border-radius: 1px solid black;
         

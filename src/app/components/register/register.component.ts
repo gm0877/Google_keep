@@ -1,7 +1,7 @@
 import { Component,OnInit } from '@angular/core';
 import {FormBuilder,FormControl, FormGroup, Validators, ValidatorFn, AbstractControl } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
-import { UserService } from '../services/user_services/user.service';
+import { UserService } from 'src/app/services/user_services/user.service';
 
 @Component({
   selector: 'app-register',
@@ -44,7 +44,11 @@ export class RegisterComponent implements OnInit{
       "email":userName,
       "password":password,
       "service":"advance"
-     }).subscribe((result)=>{console.log(result);},(error)=>{console.log(error);})
+     }).subscribe(
+      (result)=>{console.log(result);
+      },
+      (error)=>{
+        console.error(error);})
     console.log(this.RegisterForm.value);
   }
 

@@ -50,7 +50,6 @@
        
        <div  class="password">
      
-          <!-- <input  type="password"  placeholder="Password*"  formControlName="password"> -->
           <input  matInput placeholder="Password*"   formControlName="password">
           
 
@@ -58,7 +57,6 @@
           <div style="color:red;" *ngIf="submitted && f?.['password']?.errors?.['minlength']">Password should have atleast 3 characters</div>  
 
 
-          <!-- <input id="cf" type="password" placeholder="Confirm*" formControlName="cnf_pswd" > -->
           <input  id="cf" matInput placeholder="Password*"   formControlName="cnf_pswd">
           <div style="color:red;" *ngIf="submitted && f?.['cnf_pswd']?.errors?.['passwordMismatch']">
              Password and Confirm Password do not match
